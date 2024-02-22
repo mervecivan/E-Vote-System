@@ -16,6 +16,6 @@ document.getElementById('basvuru-form').addEventListener('input', function(){
 document.getElementById('basvuru-form').addEventListener('submit', function(event){
     event.preventDefault();
     alert("Başvuru Başarılı Bir Şekilde Gönderildi!");
-    window.location.href = "/src/index.html";
+    window.location.href = "/src/pages/index.html";
 });
 

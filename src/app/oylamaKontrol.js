@@ -25,7 +25,7 @@ document.getElementById('surveyForm').addEventListener('submit', function (event
     // burada anket verilerini işleme ve gönderme işlemleri yapılacak
     hasVoted=true;
     alert('Oy gönderildi!');
-    window.location.href = "/src/index.html";
+    window.location.href = "/src/pages/index.html";
 });
 
 
