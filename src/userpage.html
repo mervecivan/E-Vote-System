@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/userpage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Seçmen Sayfası</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Oylama Alanına Hoşgeldiniz</h1>
+            <div class="sidebar">
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="index.html">Anasayfa</a>
+                    </div>
+                  </nav>
+            </div>
+            <img src="/src/img/622.png" alt="e-vote">
+        </header>
+
+        <div class="main">
+            <div id="connect-metamask">
+                <h2>Metamask Hesabına Bağlan</h2>
+                <p>Lütfen Metamask hesabınıza bağlanın.</p>
+                <button onclick="connectMetamask()">Metamask Hesabına Bağlan</button>
+            </div>
+
+            <div id="survey-form" style="display: none;">
+
+                <form id="surveyForm">
+                    <h2>Adaylar</h2>
+
+                    <div class="candidate-card" id="candidate1">
+                        <img src="/src/img/user_icon.png" alt="Aday 1">
+                        <h3>Aday 1</h3>
+                        <p>Aday 1'in hakkında bilgiler...</p>
+                    </div>
+
+                    <div class="candidate-card" id="candidate2">
+                        <img src="/src/img/user_icon.png" alt="Aday 2">
+                        <h3>Aday 2</h3>
+                        <p>Aday 2'nin hakkında bilgiler...</p>
+                    </div>
+
+                    <div class="candidate-card" id="candidate3">
+                        <img src="/src/img/user_icon.png" alt="Aday 3">
+                        <h3>Aday 3</h3>
+                        <p>Aday 3'ün hakkında bilgiler...</p>
+                    </div>
+
+                    <div class="candidate-selection">
+                        <label for="candidateSelect">Bir aday seçin:</label>
+                        <select id="candidateSelect" name="candidateSelect" required>
+                            <option value="candidate1">Aday 1</option>
+                            <option value="candidate2">Aday 2</option>
+                            <option value="candidate3">Aday 3</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" id="submitBtn" disabled>OY VER</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="app/oylamaKontrol.js"></script>
+</body>
+
+</html>
